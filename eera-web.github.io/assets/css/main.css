@@ -1,0 +1,81 @@
+@font-face {
+    font-family: bodoni;
+    src: url(../fonts/BodoniXT.ttf);
+}
+@font-face {
+    src: url("https://mdn.github.io/shared-assets/fonts/LeagueMono-VF.ttf");
+    font-family: "LeagueMonoVariable";
+    font-style: normal;
+    font-stretch: 1% 500%; /* Required by Chrome */
+  }
+  
+
+body {
+    /* font-family: Calibri, sans-serif; */
+    width: 100%;
+    height: min-content;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(7,10,83,1) 52%, rgba(8,175,177,1) 87%, rgba(255,187,40,1) 100%);
+    height: min-content;
+    overflow: scroll;
+    padding: 64px;
+}
+.test {
+    color: red;
+    font-size: 60px;
+    font: bodoni,
+    sans-serif;
+    font-stretch: ultra-expanded;
+}
+.event-title {
+    font-weight: 700;
+    font-size: 300px;
+    margin: auto 0;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, rgb(195, 34, 34) 20%, rgb(119, 0, 255) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+}
+.first-band {
+    height: 1000px;
+    width: 90%;
+    border-width: 4px;
+    background-color: aqua;
+}
+.second-band {
+    height: 1000px;
+    width: 90%;
+    border-width: 4px;
+    background-color: green;
+}
+.third-band {
+    height: 1000px;
+    width: 90%;
+    border-width: 4px;
+    background-color: orange;
+}
+.fourth-band {
+    height: 1000px;
+    width: 90%;
+    border-width: 4px;
+    background-color: blue;
+}
+.presentation {
+    height: 1000px;
+    width: 90%;
+    border-width: 4px;
+    background-color: transparent;
+}
+@media (width >= 375px) { 
+
+}
+
+@media (375px <= width <= 768px) { 
+
+}
+
+@media (width <= 768px) { 
+
+}
