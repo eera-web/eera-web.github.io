@@ -1,6 +1,14 @@
 @font-face {
-    font-family: bodoni;
-    src: url(../fonts/BodoniXT.ttf);
+    font-family: "bodoni";
+    src: 
+    local("bodoni"),
+    url(../fonts/BodoniXT.ttf) format("truetype");
+}
+@font-face {
+    font-family: "cooper";
+    src: 
+        local("cooper"),
+        url(../fonts/COOPBL.TTF) format("truetype");
 }
 @font-face {
     src: url("https://mdn.github.io/shared-assets/fonts/LeagueMono-VF.ttf");
@@ -8,6 +16,12 @@
     font-style: normal;
     font-stretch: 1% 500%; /* Required by Chrome */
   }
+@font-palette-values --retro {
+	font-family: "Honk";
+	base-palette: 5;
+	override-colors: 0 #03001f, 1 #03001f, 2 transparent, 3 transparent,
+		4 transparent, 5 transparent, 6 transparent, 7 transparent;
+}
   
 
 body {
@@ -19,52 +33,71 @@ body {
     height: min-content;
     overflow: scroll;
     padding: 64px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.main-container {
+    width: 100%;
 }
 .test {
     color: red;
     font-size: 60px;
-    font: bodoni,
-    sans-serif;
+    font-family: "Honk", serif;
     font-stretch: ultra-expanded;
 }
 .event-title {
     font-weight: 700;
     font-size: 300px;
-    margin: auto 0;
+    margin: 0 auto;
+    width: min-content;
     text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
-    background: linear-gradient(180deg, rgb(195, 34, 34) 20%, rgb(119, 0, 255) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-family: "cooper", serif;
+    color: rgb(255, 255, 30);
     user-select: none;
+}
+.event-title-2 {
+    font-weight: 900;
+    font-size: 350px;
+    letter-spacing: -1.7rem;
+    text-align: center;
+    font-family: "cooper", serif;
+    position: absolute;
+    margin: 0 auto;
+    width: auto;
+    z-index: -1;
 }
 .first-band {
     height: 1000px;
     width: 90%;
+    margin: 0 auto;
     border-width: 4px;
     background-color: aqua;
 }
 .second-band {
     height: 1000px;
     width: 90%;
+    margin: 0 auto;
     border-width: 4px;
     background-color: green;
 }
 .third-band {
     height: 1000px;
     width: 90%;
+    margin: 0 auto;
     border-width: 4px;
     background-color: orange;
 }
 .fourth-band {
     height: 1000px;
     width: 90%;
+    margin: 0 auto;
     border-width: 4px;
     background-color: blue;
 }
 .presentation {
     height: 1000px;
     width: 90%;
+    margin: 0 auto;
     border-width: 4px;
     background-color: transparent;
 }

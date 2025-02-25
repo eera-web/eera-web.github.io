@@ -5,6 +5,11 @@ const secondBand = document.getElementById('second-band')
 const thirdBand = document.getElementById('third-band')
 const fourthBand = document.getElementById('fourth-band') 
 const aditionalInfo = document.getElementById('aditional-information')
+const eventTitle = document.querySelector(".event-title")
+const eventTitle2 = document.getElementById("event-title-bg")
+const eventBackgroundOffsetX = 50
+const eventBackgroundOffsetY = 20
+
 
 body.onscroll = (e) => {
     let x = body.getBoundingClientRect().y
@@ -46,6 +51,10 @@ body.onscroll = (e) => {
     // }
 }
 
-
-let t = document.querySelector(".test")
-t.classList.add('test2')
+const setBackgroundEventText = () => {
+    let boundingBoxEvent = eventTitle.getBoundingClientRect()
+    eventTitle2.style.left = `${boundingBoxEvent.left - eventBackgroundOffsetX}px`
+    eventTitle2.style.top = `${boundingBoxEvent.top - eventBackgroundOffsetY}px`
+}
+window.onresize = () => setBackgroundEventText()
+setBackgroundEventText()
